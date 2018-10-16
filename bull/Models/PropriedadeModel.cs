@@ -42,7 +42,7 @@ namespace bull.Models
         
         public CidadeModel Cidade { get; set; }
 
-        public TipoInscricao TipoDeInscricao { get;set }
+        public TipoInscricao TipoDeInscricao { get; set; }
 
         [MaxLength(15, ErrorMessage ="A inscrição deve conter no máximo 15 caracteres")]
         public string Inscricao { get; set; }

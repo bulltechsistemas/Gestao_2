@@ -39,7 +39,9 @@ namespace bull.Models
 
         public DateTime DataNascimento { get; set; }
 
-        public RacaModel Raca { get; set; }
+        public int RacaID { get; set; }
+
+        public virtual RacaModel Raca { get; set; }
 
         public TipoSexo Sexo { get; set; }
             
