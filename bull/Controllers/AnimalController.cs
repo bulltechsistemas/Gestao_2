@@ -9,11 +9,11 @@ using bull.Models;
 
 namespace bull.Controllers
 {
-    public class AnimalModelsController : Controller
+    public class AnimalController : Controller
     {
         private readonly AnimalContext _context;
 
-        public AnimalModelsController(AnimalContext context)
+        public AnimalController(AnimalContext context)
         {
             _context = context;
         }
@@ -21,7 +21,18 @@ namespace bull.Controllers
         // GET: AnimalModels
         public async Task<IActionResult> Index()
         {
-            return View(await _context.AnimalModel.ToListAsync());
+            var lista = new List<AnimalModel>() {
+                {
+                    new AnimalModel(){
+                    NomeAnimal = "NOME",
+                    Pelagem = "PRETO",
+                    NumeroCobertura = "250"
+                    }
+                }
+            };
+
+            return View(lista);
+           // return View(await _context.AnimalModel.ToListAsync());
         }
 
         // GET: AnimalModels/Details/5
