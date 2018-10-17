@@ -124,11 +124,11 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                     <h6 class="dropdown-header">Históricos:</h6>
-                    <a class="dropdown-item" href="login.html">Vendas</a>
-                    <a class="dropdown-item" href="register.html">Baixas</a>
-                    <a class="dropdown-item" href="forgot-password.html">Transf. entre Lotes</a>
-                    <a class="dropdown-item" href="404.html">Transf. de Entradas</a>
-                    <a class="dropdown-item" href="404.html">Transf. de Saídas</a>
+                    <a class="dropdown-item" asp-controller="VendaManejo" asp-action="Index">Vendas</a>
+                    <a class="dropdown-item" asp-controller="BaixaManejo" asp-action="Index">Baixas</a>
+                    <a class="dropdown-item" asp-controller="TransferenciaLoteManejo" asp-action="Index">Transf. entre Lotes</a>
+                    <a class="dropdown-item" asp-controller="TransferenciaEntradaManejo" asp-action="Index">Transf. de Entradas</a>
+                    <a class="dropdown-item" asp-controller="TransferenciaSaidaManejo" asp-action="Index">Transf. de Saídas</a>
                 </div>
             </li>
             <li class="nav-item dropdown">
@@ -138,10 +138,10 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="pagesDropdown">
                     <h6 class="dropdown-header">Controle de Reprodução:</h6>
-                    <a class="dropdown-item" href="login.html">Fêmeas Vazias</a>
-                    <a class="dropdown-item" href="register.html">Cobertas Sem Exame</a>
-                    <a class="dropdown-item" href="forgot-password.html">Prenhas</a>                    
-                    <a class="dropdown-item" href="404.html">Lactantes</a>                   
+                    <a class="dropdown-item" asp-controller="ReproducaoFemeasVazias" asp-action="Index">Fêmeas Vazias</a>
+                    <a class="dropdown-item" asp-controller="ReproducaoCobertasSemExame" asp-action="Index">Cobertas Sem Exame</a>
+                    <a class="dropdown-item" asp-controller="ReproducaoPrenhas" asp-action="Index">Prenhas</a>                    
+                    <a class="dropdown-item" asp-controller="ReproducaoLactantes" asp-action="Index">Lactantes</a>                   
                 </div>
             </li>
             <li class="nav-item dropdown">
